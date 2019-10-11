@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Menu, Container } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
-function Home() {
-  return <h2>Home</h2>;
-}
+//pages
+import StatelessPage from './pages/StatelessPage';
 
 function About() {
   return <h2>About</h2>;
@@ -21,9 +20,9 @@ export default class App extends Component {
       <Router>
         <Menu>
           <Menu.Item
-            name='home'
+            name='Stateless'
           >
-            <Link to="/">Home</Link>
+            <Link to="/">Stateless</Link>
         </Menu.Item>
 
           <Menu.Item
@@ -47,7 +46,7 @@ export default class App extends Component {
               <Users />
             </Route>
             <Route path="/">
-              <Home />
+              <StatelessPage />
             </Route>
           </Switch>
         </Container>

@@ -1,0 +1,11 @@
+.avatarWrapper {
+  border: 6px blue solid;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+
+  img {
+    width: 100%;
+  }
+}
